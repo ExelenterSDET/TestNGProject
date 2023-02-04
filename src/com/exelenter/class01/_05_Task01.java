@@ -18,31 +18,25 @@ import org.testng.annotations.Test;
  *      4. firstMethod
  */
 public class _05_Task01 {
-
-    @Test
+    @Test(priority = 4)
     void firstMethod() {
         System.out.println("firstMethod");
     }
-
-    @Test
+    @Test(enabled = false)
     void firstMethod1() {
         System.out.println("firstMethod1");
     }
-
-    @Test
+    @Test(priority = 3)
     void secondMethod() {
         System.out.println("secondMethod");
     }
-
-    @Test
+    @Test(priority = 2)
     void thirdMethod() {
         System.out.println("thirdMethod");
     }
-
-    @Test
+    @Test(priority = 1)
     void fourthMethod() {
         System.out.println("fourthMethod");
     }
-
 
 }
