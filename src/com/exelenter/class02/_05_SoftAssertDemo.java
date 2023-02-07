@@ -58,11 +58,11 @@ public class _05_SoftAssertDemo extends BaseClass {
      *     Step 3 <-- Continue
      *     Step 4 <-- Continue
      *
-     *     Assert (Recommended way of testing)
-     *      *     Step 1
-     *      *     Step 2 <-- failed here, stops right here.
-     *      *     Step 3 <-- Skip
-     *      *     Step 4 <-- Skip
+     *   Assert (Recommended)
+     *     Step 1
+     *     Step 2 <-- failed here, stops right here.
+     *     Step 3 <-- Skip
+     *     Step 4 <-- Skip
      */
 
 }
