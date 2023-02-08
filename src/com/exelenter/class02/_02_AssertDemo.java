@@ -45,7 +45,6 @@ public class _02_AssertDemo extends BaseClass {
 
         // validation
         DashboardPage dashboard = new DashboardPage();
-
         String expectedText = "Welcome Admin";
         String actualText = dashboard.welcome.getText();
         Assert.assertEquals(actualText, expectedText, "'Welcome Admin' text is incorrect");  // Message is optional and prints only if the test fails.

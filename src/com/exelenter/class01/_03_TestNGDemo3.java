@@ -3,7 +3,7 @@ package com.exelenter.class01;
 import org.testng.annotations.*;
 
 public class _03_TestNGDemo3 {
-    @Test(enabled = false)    // If you want to ignore a test, use attribute 'enabled=false' (do not run this test).
+    @Test(enabled = true)    // If you want to ignore a test, use attribute 'enabled=false' (do not run this test).
     public void test1() {
         System.out.println("-- Test One --");
     }

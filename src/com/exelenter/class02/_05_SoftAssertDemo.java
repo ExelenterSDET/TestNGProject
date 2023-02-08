@@ -27,18 +27,18 @@ public class _05_SoftAssertDemo extends BaseClass {
         LoginPage login = new LoginPage();
         boolean logoDisplayed = login.homepageLogo.isDisplayed();
         logoDisplayed = false;
-//        Assert.assertTrue(logoDisplayed, "Login logo is not displayed.");  // Validating logo  // <== Hard Assert
+//        Assert.assertTrue(logoDisplayed, "Login logo is not displayed.");   // Validating logo   <== Hard Assert, if fails, following steps will not continue
 
         // Soft Assert (if soft assert fails, remaining test steps will continue)
         SoftAssert softAssert = new SoftAssert();
-        softAssert.assertTrue(logoDisplayed, "Login logo is not displayed.");    // <==
+        softAssert.assertTrue(logoDisplayed, "Login logo is not displayed.");     // <== Soft Assert, if fails, following steps will continue.
 
         // Second: Login to the website
         sendText(login.username, ConfigsReader.getProperties("username"));
         sendText(login.password, ConfigsReader.getProperties("password"));
         clickButWaitForClickability(login.loginBtn);
         DashboardPage dashboard = new DashboardPage();
-        Assert.assertEquals(dashboard.welcome.getText(), "Welcome Admin", "'Welcome Admin' text is incorrect"); // Validating login
+        Assert.assertEquals(dashboard.welcome.getText(), "Welcome Admin", "'Welcome Admin' text is incorrect");  // Validating login
         System.out.println("Using Hard Assert if previous test assertion fails, this line will not print.");
 
         // assertAll() method must be used at the end of soft-assert test. This will check ALL assertions, if one fails all test fails.
