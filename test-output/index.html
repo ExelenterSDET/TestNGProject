@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,17 +102,7 @@
                     <div class="method-list-content passed suite-Default_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="test.LoginTest" class="method navigator-link" hash-for-method="validAdminLogin">validAdminLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="test.LoginTest" class="method navigator-link" hash-for-method="validUserEmptyPassword">validUserEmptyPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="test.LoginTest" class="method navigator-link" hash-for-method="validUserInvalidPassword">validUserInvalidPassword</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_Suite" title="test.AddEmployeeTest" class="method navigator-link" hash-for-method="addEmployeeTest">addEmployeeTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_Suite -->
@@ -130,28 +120,14 @@
           <div class="suite-Default_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test.LoginTest</span>
+              <span class="class-name">test.AddEmployeeTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validAdminLogin">
-                  </a> <!-- validAdminLogin -->
-                  <span class="method-name">validAdminLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validUserEmptyPassword">
-                  </a> <!-- validUserEmptyPassword -->
-                  <span class="method-name">validUserEmptyPassword</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validUserInvalidPassword">
-                  </a> <!-- validUserInvalidPassword -->
-                  <span class="method-name">validUserInvalidPassword</span>
+                  <a name="addEmployeeTest">
+                  </a> <!-- addEmployeeTest -->
+                  <span class="method-name">addEmployeeTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -168,7 +144,11 @@
 &lt;suite name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TestNGProject&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.LoginTest&quot;/&gt;
+      &lt;class name=&quot;test.AddEmployeeTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;addEmployeeTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- test.AddEmployeeTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestNGProject --&gt;
 &lt;/suite&gt; &lt;!-- Default Suite --&gt;
@@ -208,24 +188,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validAdminLogin')
-data.setCell(0, 2, 'test.LoginTest')
-data.setCell(0, 3, 1000);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validUserInvalidPassword')
-data.setCell(1, 2, 'test.LoginTest')
-data.setCell(1, 3, 640);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validUserEmptyPassword')
-data.setCell(2, 2, 'test.LoginTest')
-data.setCell(2, 3, 172);
+data.setCell(0, 1, 'addEmployeeTest')
+data.setCell(0, 2, 'test.AddEmployeeTest')
+data.setCell(0, 3, 2687);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -251,42 +223,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.LoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.AddEmployeeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">startBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validAdminLogin</span>
-                <span class="method-start">3025 ms</span>
+                <span class="method-name">addEmployeeTest</span>
+                <span class="method-start">3257 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">4026 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startBrowser</span>
-                <span class="method-start">6141 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validUserEmptyPassword</span>
-                <span class="method-start">8477 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">8650 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startBrowser</span>
-                <span class="method-start">10788 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validUserInvalidPassword</span>
-                <span class="method-start">13292 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitBrowser</span>
-                <span class="method-start">13932 ms</span>
+                <span class="method-start">5946 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
