@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Smoke Test Suite">
-    <test  name="Login Test">
+<suite name="Groups Suite">
+    <test name="Group test">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
         <classes>
-            <class name="test.LoginTest">
-                <methods>
-                    <exclude name="validAdminLogin"/>
-                    <include name="validUserInvalidPassword"/>
-                    <include name="validUserEmptyPassword"/>
-                </methods>
+            <class name="com.exelenter.class04._01_GroupsDemo">
+<!--                <methods>-->
+<!--                    <include name="test1"/>-->
+<!--                    <include name="test2"/>-->
+<!--                    <include name="test3"/>-->
+<!--                    <include name="test4"/>-->
+<!--                </methods>-->
             </class>
         </classes>
     </test>

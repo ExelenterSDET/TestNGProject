@@ -1,65 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-09T20:00:34 MST" name="Regression Suite" finished-at="2023-02-09T20:00:57 MST" duration-ms="23116">
+  <suite started-at="2023-02-13T20:18:04 MST" name="Default Suite" finished-at="2023-02-13T20:18:22 MST" duration-ms="17816">
     <groups>
     </groups>
-    <test started-at="2023-02-09T20:00:34 MST" name="Add Employee Test" finished-at="2023-02-09T20:00:42 MST" duration-ms="8431">
-      <class name="test.AddEmployeeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.AddEmployeeTest@2473b9ce]" started-at="2023-02-09T20:00:34 MST" name="setUp" finished-at="2023-02-09T20:00:37 MST" duration-ms="3396" status="PASS">
+    <test started-at="2023-02-13T20:18:04 MST" name="TestNGProject" finished-at="2023-02-13T20:18:22 MST" duration-ms="17816">
+      <class name="com.exelenter.class04._04_DataProviderDemo3">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:04 MST" name="setUp" finished-at="2023-02-13T20:18:08 MST" duration-ms="3908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addEmployeeTest()[pri:0, instance:test.AddEmployeeTest@2473b9ce]" started-at="2023-02-09T20:00:37 MST" name="addEmployeeTest" finished-at="2023-02-09T20:00:40 MST" duration-ms="2862" status="PASS">
+        <test-method signature="loginTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:08 MST" name="loginTest" data-provider="loginTests" finished-at="2023-02-13T20:18:09 MST" duration-ms="1110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Exelent2022Sdet!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.AddEmployeeTest@2473b9ce]" started-at="2023-02-09T20:00:40 MST" name="tearDown" finished-at="2023-02-09T20:00:42 MST" duration-ms="2137" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:09 MST" name="tearDown" finished-at="2023-02-13T20:18:11 MST" duration-ms="2134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- test.AddEmployeeTest -->
-    </test> <!-- Add Employee Test -->
-    <test started-at="2023-02-09T20:00:42 MST" name="Login Test" finished-at="2023-02-09T20:00:57 MST" duration-ms="14521">
-      <class name="test.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@290dbf45]" started-at="2023-02-09T20:00:42 MST" name="setUp" finished-at="2023-02-09T20:00:45 MST" duration-ms="2355" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:11 MST" name="setUp" finished-at="2023-02-13T20:18:13 MST" duration-ms="2067" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validAdminLogin()[pri:0, instance:test.LoginTest@290dbf45]" started-at="2023-02-09T20:00:45 MST" name="validAdminLogin" finished-at="2023-02-09T20:00:46 MST" duration-ms="1005" status="PASS">
+        <test-method signature="loginTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:13 MST" name="loginTest" data-provider="loginTests" finished-at="2023-02-13T20:18:14 MST" duration-ms="934" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[johndoe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[k#G886@H]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[35]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validAdminLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@290dbf45]" started-at="2023-02-09T20:00:46 MST" name="tearDown" finished-at="2023-02-09T20:00:48 MST" duration-ms="2129" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:14 MST" name="tearDown" finished-at="2023-02-13T20:18:16 MST" duration-ms="2144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@290dbf45]" started-at="2023-02-09T20:00:48 MST" name="setUp" finished-at="2023-02-09T20:00:50 MST" duration-ms="1972" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:16 MST" name="setUp" finished-at="2023-02-13T20:18:19 MST" duration-ms="2322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validUserInvalidPassword()[pri:0, instance:test.LoginTest@290dbf45]" started-at="2023-02-09T20:00:50 MST" name="validUserInvalidPassword" finished-at="2023-02-09T20:00:51 MST" duration-ms="671" status="PASS">
+        <test-method signature="loginTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:19 MST" name="loginTest" data-provider="loginTests" finished-at="2023-02-13T20:18:20 MST" duration-ms="1037" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EssUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ess@2023]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[45]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validUserInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@290dbf45]" started-at="2023-02-09T20:00:51 MST" name="tearDown" finished-at="2023-02-09T20:00:53 MST" duration-ms="2116" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:20 MST" name="tearDown" finished-at="2023-02-13T20:18:22 MST" duration-ms="2137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.LoginTest@290dbf45]" started-at="2023-02-09T20:00:53 MST" name="setUp" finished-at="2023-02-09T20:00:55 MST" duration-ms="2004" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="validUserEmptyPassword()[pri:0, instance:test.LoginTest@290dbf45]" started-at="2023-02-09T20:00:55 MST" name="validUserEmptyPassword" finished-at="2023-02-09T20:00:55 MST" duration-ms="140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validUserEmptyPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@290dbf45]" started-at="2023-02-09T20:00:55 MST" name="tearDown" finished-at="2023-02-09T20:00:57 MST" duration-ms="2126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- test.LoginTest -->
-    </test> <!-- Login Test -->
-  </suite> <!-- Regression Suite -->
+      </class> <!-- com.exelenter.class04._04_DataProviderDemo3 -->
+    </test> <!-- TestNGProject -->
+  </suite> <!-- Default Suite -->
 </testng-results>
