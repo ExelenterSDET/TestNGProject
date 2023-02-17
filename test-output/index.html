@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Default Suite</span>
+              <span class="suite-name border-failed">Default Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_Suite" class="hide-methods failed suite-Default_Suite"> (hide)</a> <!-- hide-methods failed suite-Default_Suite -->
+                      <a href="#" panel-name="suite-Default_Suite" class="show-methods failed suite-Default_Suite"> (show)</a> <!-- show-methods failed suite-Default_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class05._02_HW_AddEmployee" class="method navigator-link" hash-for-method="addEmployeeTest(Isabella, Rodriguez, irodriguez, gE-5tX[9uG:0)">addEmployeeTest(Isabella, Rodriguez, irodriguez, gE-5tX[9uG:0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,27 +116,22 @@
                     <div class="method-list-content passed suite-Default_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class05._02_HW_AddEmployee" class="method navigator-link" hash-for-method="addEmployeeTest(Zoe, Kim, zoekim, bI~3eU$1aU@2)">addEmployeeTest(Zoe, Kim, zoekim, bI~3eU$1aU@2)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class05._02_HW_AddEmployee" class="method navigator-link" hash-for-method="addEmployeeTest(Caleb, Thomson, calebthomson1234, jN,3bM=4bR@4)">addEmployeeTest(Caleb, Thomson, calebthomson1234, jN,3bM=4bR@4)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class05._02_HW_AddEmployee" class="method navigator-link" hash-for-method="addEmployeeTest(Caleb, Thomson, calebthomson, tM}8rL-6tG&gt;7)">addEmployeeTest(Caleb, Thomson, calebthomson, tM}8rL-6tG>7)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class05._02_HW_AddEmployee" class="method navigator-link" hash-for-method="addEmployeeTest(Zoe, Kim, zoekim1234, rB:0yZ:5zX&amp;0)">addEmployeeTest(Zoe, Kim, zoekim1234, rB:0yZ:5zX&0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class05._02_HW_AddEmployee" class="method navigator-link" hash-for-method="addEmployeeTest(Sophia, Patel, sophiapatel, cM*2bF)7eO&amp;3)">addEmployeeTest(Sophia, Patel, sophiapatel, cM*2bF)7eO&3)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class05._02_HW_AddEmployee" class="method navigator-link" hash-for-method="addEmployeeTest(Jackson, Chen, jacksonchen1234, yU-1aM~3aO}0)">addEmployeeTest(Jackson, Chen, jacksonchen1234, yU-1aM~3aO}0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class05._02_HW_AddEmployee" class="method navigator-link" hash-for-method="addEmployeeTest(Jackson, Chen, jacksonchen, uN&amp;4oW-5zT_3)">addEmployeeTest(Jackson, Chen, jacksonchen, uN&4oW-5zT_3)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class05._02_HW_AddEmployee" class="method navigator-link" hash-for-method="addEmployeeTest(Isabella, Rodriguez, irodriguez, mY#2kL;4gR.9)">addEmployeeTest(Isabella, Rodriguez, irodriguez, mY#2kL;4gR.9)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_Suite" title="com.exelenter.class05._02_HW_AddEmployee" class="method navigator-link" hash-for-method="addEmployeeTest(Sophia, Patel, sophiapatel1234, uN,3lR,0rB?0)">addEmployeeTest(Sophia, Patel, sophiapatel1234, uN,3lR,0rB?0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_Suite -->
@@ -137,6 +146,29 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_Suite" class="panel Default_Suite">
+          <div class="suite-Default_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.exelenter.class05._02_HW_AddEmployee</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addEmployeeTest(Isabella, Rodriguez, irodriguez, gE-5tX[9uG:0)">
+                  </a> <!-- addEmployeeTest(Isabella, Rodriguez, irodriguez, gE-5tX[9uG:0) -->
+                  <span class="method-name">addEmployeeTest</span>
+                  <span class="parameters">(Isabella, Rodriguez, irodriguez, gE-5tX[9uG:0)</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Employee is not added. Username or ID already exits.
+	at com.exelenter.class05._02_HW_AddEmployee.addEmployeeTest(_02_HW_AddEmployee.java:69)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_Suite-class-failed -->
           <div class="suite-Default_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -145,42 +177,34 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="addEmployeeTest(Zoe, Kim, zoekim, bI~3eU$1aU@2)">
-                  </a> <!-- addEmployeeTest(Zoe, Kim, zoekim, bI~3eU$1aU@2) -->
+                  <a name="addEmployeeTest(Caleb, Thomson, calebthomson1234, jN,3bM=4bR@4)">
+                  </a> <!-- addEmployeeTest(Caleb, Thomson, calebthomson1234, jN,3bM=4bR@4) -->
                   <span class="method-name">addEmployeeTest</span>
-                  <span class="parameters">(Zoe, Kim, zoekim, bI~3eU$1aU@2)</span>
+                  <span class="parameters">(Caleb, Thomson, calebthomson1234, jN,3bM=4bR@4)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="addEmployeeTest(Caleb, Thomson, calebthomson, tM}8rL-6tG&gt;7)">
-                  </a> <!-- addEmployeeTest(Caleb, Thomson, calebthomson, tM}8rL-6tG>7) -->
+                  <a name="addEmployeeTest(Zoe, Kim, zoekim1234, rB:0yZ:5zX&amp;0)">
+                  </a> <!-- addEmployeeTest(Zoe, Kim, zoekim1234, rB:0yZ:5zX&0) -->
                   <span class="method-name">addEmployeeTest</span>
-                  <span class="parameters">(Caleb, Thomson, calebthomson, tM}8rL-6tG>7)</span>
+                  <span class="parameters">(Zoe, Kim, zoekim1234, rB:0yZ:5zX&0)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="addEmployeeTest(Sophia, Patel, sophiapatel, cM*2bF)7eO&amp;3)">
-                  </a> <!-- addEmployeeTest(Sophia, Patel, sophiapatel, cM*2bF)7eO&3) -->
+                  <a name="addEmployeeTest(Jackson, Chen, jacksonchen1234, yU-1aM~3aO}0)">
+                  </a> <!-- addEmployeeTest(Jackson, Chen, jacksonchen1234, yU-1aM~3aO}0) -->
                   <span class="method-name">addEmployeeTest</span>
-                  <span class="parameters">(Sophia, Patel, sophiapatel, cM*2bF)7eO&3)</span>
+                  <span class="parameters">(Jackson, Chen, jacksonchen1234, yU-1aM~3aO}0)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="addEmployeeTest(Jackson, Chen, jacksonchen, uN&amp;4oW-5zT_3)">
-                  </a> <!-- addEmployeeTest(Jackson, Chen, jacksonchen, uN&4oW-5zT_3) -->
+                  <a name="addEmployeeTest(Sophia, Patel, sophiapatel1234, uN,3lR,0rB?0)">
+                  </a> <!-- addEmployeeTest(Sophia, Patel, sophiapatel1234, uN,3lR,0rB?0) -->
                   <span class="method-name">addEmployeeTest</span>
-                  <span class="parameters">(Jackson, Chen, jacksonchen, uN&4oW-5zT_3)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addEmployeeTest(Isabella, Rodriguez, irodriguez, mY#2kL;4gR.9)">
-                  </a> <!-- addEmployeeTest(Isabella, Rodriguez, irodriguez, mY#2kL;4gR.9) -->
-                  <span class="method-name">addEmployeeTest</span>
-                  <span class="parameters">(Isabella, Rodriguez, irodriguez, mY#2kL;4gR.9)</span>
+                  <span class="parameters">(Sophia, Patel, sophiapatel1234, uN,3lR,0rB?0)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,11 +221,7 @@
 &lt;suite name=&quot;Default Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TestNGProject&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.exelenter.class05._02_HW_AddEmployee&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;addEmployeeTest&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.exelenter.class05._02_HW_AddEmployee --&gt;
+      &lt;class name=&quot;com.exelenter.class05._02_HW_AddEmployee&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestNGProject --&gt;
 &lt;/suite&gt; &lt;!-- Default Suite --&gt;
@@ -245,28 +265,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addEmployeeTest')
 data.setCell(0, 2, 'com.exelenter.class05._02_HW_AddEmployee')
-data.setCell(0, 3, 9676);
+data.setCell(0, 3, 21170);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'addEmployeeTest')
 data.setCell(1, 2, 'com.exelenter.class05._02_HW_AddEmployee')
-data.setCell(1, 3, 8920);
+data.setCell(1, 3, 7896);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'addEmployeeTest')
 data.setCell(2, 2, 'com.exelenter.class05._02_HW_AddEmployee')
-data.setCell(2, 3, 8419);
+data.setCell(2, 3, 7473);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'addEmployeeTest')
 data.setCell(3, 2, 'com.exelenter.class05._02_HW_AddEmployee')
-data.setCell(3, 3, 8160);
+data.setCell(3, 3, 7450);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'addEmployeeTest')
 data.setCell(4, 2, 'com.exelenter.class05._02_HW_AddEmployee')
-data.setCell(4, 3, 7901);
+data.setCell(4, 3, 7407);
 window.suiteTableData['Default_Suite']= { tableData: data, tableDiv: 'times-div-Default_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
               <div id="times-div-Default_Suite">
               </div> <!-- times-div-Default_Suite -->
             </div> <!-- times-div -->
@@ -298,60 +318,62 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addEmployeeTest(Sophia, Patel, sophiapatel, cM*2bF)7eO&3)</span>
-                <span class="method-start">4042 ms</span>
+                <span class="method-name">addEmployeeTest(Sophia, Patel, sophiapatel1234, uN,3lR,0rB?0)</span>
+                <span class="method-start">2870 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12964 ms</span>
+                <span class="method-start">10344 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">15096 ms</span>
+                <span class="method-start">12484 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addEmployeeTest(Jackson, Chen, jacksonchen, uN&4oW-5zT_3)</span>
-                <span class="method-start">17801 ms</span>
+                <span class="method-name">addEmployeeTest(Jackson, Chen, jacksonchen1234, yU-1aM~3aO}0)</span>
+                <span class="method-start">14678 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">25962 ms</span>
+                <span class="method-start">22128 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">28070 ms</span>
+                <span class="method-start">24260 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addEmployeeTest(Isabella, Rodriguez, irodriguez, mY#2kL;4gR.9)</span>
-                <span class="method-start">30621 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addEmployeeTest(Isabella, Rodriguez, irodriguez, gE-5tX[9uG:0)</span>
+                <span class="method-start">26356 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38522 ms</span>
+                <span class="method-start">47531 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">40658 ms</span>
+                <span class="method-start">49643 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addEmployeeTest(Caleb, Thomson, calebthomson, tM}8rL-6tG>7)</span>
-                <span class="method-start">43269 ms</span>
+                <span class="method-name">addEmployeeTest(Caleb, Thomson, calebthomson1234, jN,3bM=4bR@4)</span>
+                <span class="method-start">51753 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">51688 ms</span>
+                <span class="method-start">59160 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">53825 ms</span>
+                <span class="method-start">61276 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">addEmployeeTest(Zoe, Kim, zoekim, bI~3eU$1aU@2)</span>
-                <span class="method-start">56572 ms</span>
+                <span class="method-name">addEmployeeTest(Zoe, Kim, zoekim1234, rB:0yZ:5zX&0)</span>
+                <span class="method-start">63505 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">66248 ms</span>
+                <span class="method-start">71402 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

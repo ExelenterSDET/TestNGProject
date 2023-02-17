@@ -1,5 +1,6 @@
 package com.exelenter.class05;
 
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import utils.BaseClass;
@@ -43,27 +44,46 @@ public class _02_HW_AddEmployee extends BaseClass {
         wait(1);
         click(addEmployeePage.saveButton);
 
-        // Validation
-        waitForVisibility(personalDetailsPage.personalDetailsHeader);  // wait for the Personal Details Page Header to become visible
-        String actualEmployeeId = personalDetailsPage.employeeId.getAttribute("value");
-        assertEquals(actualEmployeeId, expectedEmployeeId, "Employee ID does not match");
-        takeScreenshot(firstName + "_" + lastName);
-        System.out.println("The new employee is added successfully");
+        // 1st Validation without Try-Catch (not handling the exception, if there is going be one).
+//        waitForVisibility(personalDetailsPage.personalDetailsHeader);  // wait for the Personal Details Page Header to become visible
+//        String actualEmployeeId = personalDetailsPage.employeeId.getAttribute("value");
+//        assertEquals(actualEmployeeId, expectedEmployeeId, "Employee ID does not match");
+//        takeScreenshot(firstName + "_" + lastName);
+//        System.out.println("The new employee is added successfully");
 
-        // Validation with Try-Catch
+        // 2nd Validation with Try-Catch
+        try {
+            boolean headerDisplayed = personalDetailsPage.personalDetailsHeader.isDisplayed();
+            if (headerDisplayed) {
+                String actualEmployeeId = personalDetailsPage.employeeId.getAttribute("value");
+                assertEquals(actualEmployeeId, expectedEmployeeId, "Employee ID does not match");
+                takeScreenshot(firstName + "_" + lastName);
+                System.out.println("The new employee is added successfully");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // 1st way to fail your test
+//            System.out.println("Employee is not added. Username or ID already exits.");
+//            Assert.fail();
+            // 2nd way to fail my test
+            throw  new RuntimeException("Employee is not added. Username or ID already exits.");
+        }
 
     }
 
     @DataProvider
     public Object[][] addEmployees() {
         return new Object[][]{
-                {"Sophia", "Patel", "sophiapatel", randomStrongPassWord()},
-                {"Jackson", "Chen", "jacksonchen", randomStrongPassWord()},
+                {"Sophia", "Patel", "sophiapatel1234", randomStrongPassWord()},
+                {"Jackson", "Chen", "jacksonchen1234", randomStrongPassWord()},
                 {"Isabella", "Rodriguez", "irodriguez", randomStrongPassWord()},
-                {"Caleb", "Thomson", "calebthomson", randomStrongPassWord()},
-                {"Zoe", "Kim", "zoekim", randomStrongPassWord()}
+                {"Caleb", "Thomson", "calebthomson1234", randomStrongPassWord()},
+                {"Zoe", "Kim", "zoekim1234", randomStrongPassWord()}
         };
     }
+
+    // 2nd way: How to read data from Excel
+
 
 
 }
