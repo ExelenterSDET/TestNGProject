@@ -36,7 +36,7 @@ public class _05_AddEmployee extends BaseClass {
         Assert.assertEquals(actualEmployeeId, expectedEmployeeId, "Employee Id doesn't match");
     }
 
-    @DataProvider(name = "testOne")   // When calling DataProvider in your @Test, you can either use name of method OR alias name.
+    @DataProvider(name = "testOne")   // When calling DataProvider in your @Test, you can either use method name OR alias name.
     public Object[][] addEmployees() {
         Object[][] employee = {
                 {"John", "Doe"},

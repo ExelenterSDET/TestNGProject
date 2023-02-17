@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="TestNGProject(failed)">
     <classes>
-      <class name="com.exelenter.class04._05_AddEmployee">
+      <class name="com.exelenter.class05._01_ListenerDemo">
         <methods>
-          <include name="tearDown"/>
-          <include name="addEmployeeTest"/>
-          <include name="setUp"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- com.exelenter.class04._05_AddEmployee -->
+      </class> <!-- com.exelenter.class05._01_ListenerDemo -->
     </classes>
   </test> <!-- TestNGProject(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

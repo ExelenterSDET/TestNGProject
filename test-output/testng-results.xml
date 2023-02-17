@@ -1,100 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-13T20:18:04 MST" name="Default Suite" finished-at="2023-02-13T20:18:22 MST" duration-ms="17816">
+  <suite started-at="2023-02-15T20:08:40 MST" name="Default Suite" finished-at="2023-02-15T20:09:49 MST" duration-ms="68386">
     <groups>
     </groups>
-    <test started-at="2023-02-13T20:18:04 MST" name="TestNGProject" finished-at="2023-02-13T20:18:22 MST" duration-ms="17816">
-      <class name="com.exelenter.class04._04_DataProviderDemo3">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:04 MST" name="setUp" finished-at="2023-02-13T20:18:08 MST" duration-ms="3908" status="PASS">
+    <test started-at="2023-02-15T20:08:40 MST" name="TestNGProject" finished-at="2023-02-15T20:09:49 MST" duration-ms="68386">
+      <class name="com.exelenter.class05._02_HW_AddEmployee">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:08:40 MST" name="setUp" finished-at="2023-02-15T20:08:44 MST" duration-ms="4041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:08 MST" name="loginTest" data-provider="loginTests" finished-at="2023-02-13T20:18:09 MST" duration-ms="1110" status="PASS">
+        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:08:44 MST" name="addEmployeeTest" data-provider="addEmployees" finished-at="2023-02-15T20:08:53 MST" duration-ms="8920" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Admin]]>
+                <![CDATA[Sophia]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Exelent2022Sdet!]]>
+                <![CDATA[Patel]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[25]]>
+                <![CDATA[sophiapatel]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[cM*2bF)7eO&3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:09 MST" name="tearDown" finished-at="2023-02-13T20:18:11 MST" duration-ms="2134" status="PASS">
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:08:53 MST" name="tearDown" finished-at="2023-02-15T20:08:56 MST" duration-ms="2131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:11 MST" name="setUp" finished-at="2023-02-13T20:18:13 MST" duration-ms="2067" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:08:56 MST" name="setUp" finished-at="2023-02-15T20:08:58 MST" duration-ms="2705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:13 MST" name="loginTest" data-provider="loginTests" finished-at="2023-02-13T20:18:14 MST" duration-ms="934" status="PASS">
+        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:08:58 MST" name="addEmployeeTest" data-provider="addEmployees" finished-at="2023-02-15T20:09:06 MST" duration-ms="8160" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[johndoe]]>
+                <![CDATA[Jackson]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[k#G886@H]]>
+                <![CDATA[Chen]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[35]]>
+                <![CDATA[jacksonchen]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[uN&4oW-5zT_3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:14 MST" name="tearDown" finished-at="2023-02-13T20:18:16 MST" duration-ms="2144" status="PASS">
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:09:06 MST" name="tearDown" finished-at="2023-02-15T20:09:08 MST" duration-ms="2107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:16 MST" name="setUp" finished-at="2023-02-13T20:18:19 MST" duration-ms="2322" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:09:08 MST" name="setUp" finished-at="2023-02-15T20:09:11 MST" duration-ms="2551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest(java.lang.String, java.lang.String, int)[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:19 MST" name="loginTest" data-provider="loginTests" finished-at="2023-02-13T20:18:20 MST" duration-ms="1037" status="PASS">
+        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:09:11 MST" name="addEmployeeTest" data-provider="addEmployees" finished-at="2023-02-15T20:09:19 MST" duration-ms="7901" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[EssUser]]>
+                <![CDATA[Isabella]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Ess@2023]]>
+                <![CDATA[Rodriguez]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[45]]>
+                <![CDATA[irodriguez]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mY#2kL;4gR.9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class04._04_DataProviderDemo3@71d15f18]" started-at="2023-02-13T20:18:20 MST" name="tearDown" finished-at="2023-02-13T20:18:22 MST" duration-ms="2137" status="PASS">
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:09:19 MST" name="tearDown" finished-at="2023-02-15T20:09:21 MST" duration-ms="2134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.exelenter.class04._04_DataProviderDemo3 -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:09:21 MST" name="setUp" finished-at="2023-02-15T20:09:24 MST" duration-ms="2611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:09:24 MST" name="addEmployeeTest" data-provider="addEmployees" finished-at="2023-02-15T20:09:32 MST" duration-ms="8419" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Caleb]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Thomson]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[calebthomson]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[tM}8rL-6tG>7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:09:32 MST" name="tearDown" finished-at="2023-02-15T20:09:34 MST" duration-ms="2136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:09:34 MST" name="setUp" finished-at="2023-02-15T20:09:37 MST" duration-ms="2746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:09:37 MST" name="addEmployeeTest" data-provider="addEmployees" finished-at="2023-02-15T20:09:47 MST" duration-ms="9676" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Zoe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Kim]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[zoekim]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[bI~3eU$1aU@2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployeeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@276438c9]" started-at="2023-02-15T20:09:47 MST" name="tearDown" finished-at="2023-02-15T20:09:49 MST" duration-ms="2111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.exelenter.class05._02_HW_AddEmployee -->
     </test> <!-- TestNGProject -->
   </suite> <!-- Default Suite -->
 </testng-results>
