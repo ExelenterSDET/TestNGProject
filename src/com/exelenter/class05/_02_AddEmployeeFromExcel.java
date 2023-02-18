@@ -1,9 +1,9 @@
 package com.exelenter.class05;
 
-import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import utils.BaseClass;
+import utils.ExcelUtility;
 
 import static org.testng.Assert.assertEquals;
 
@@ -22,9 +22,9 @@ import static org.testng.Assert.assertEquals;
          7. Close the browser
     BONUS: Specify a group name for this test case, and execute from the XML file.
  */
-public class _02_HW_AddEmployee extends BaseClass {
+public class _02_AddEmployeeFromExcel extends BaseClass {
 
-    @Test(dataProvider = "addEmployees")
+    @Test(dataProvider = "readFromExcel", groups = {"smoke","regression", "excel"})
     public void addEmployeeTest(String firstName, String lastName, String userName, String password) {
         loginPage.loginToWebsite("username", "password");
         wait(1);
@@ -76,14 +76,17 @@ public class _02_HW_AddEmployee extends BaseClass {
         return new Object[][]{
                 {"Sophia", "Patel", "sophiapatel1234", randomStrongPassWord()},
                 {"Jackson", "Chen", "jacksonchen1234", randomStrongPassWord()},
-                {"Isabella", "Rodriguez", "irodriguez", randomStrongPassWord()},
+                {"Isabella", "Rodriguez", "irodriguez", randomStrongPassWord()},   // We are failing this on purpose, to see if Try-Catch works.
                 {"Caleb", "Thomson", "calebthomson1234", randomStrongPassWord()},
                 {"Zoe", "Kim", "zoekim1234", randomStrongPassWord()}
         };
     }
 
     // 2nd way: How to read data from Excel
-
-
+    @DataProvider(name = "readFromExcel")
+    public Object[][] getDataFromExcel() {
+        String absolutePath = ExcelUtility.projectPath + "/testData/ExelenterEmployeesList.xlsx";  //Don't forget slash in front of testData
+        return ExcelUtility.readFromExcel(absolutePath, "Employee");
+    }
 
 }
