@@ -11,6 +11,8 @@
       <class name="com.exelenter.class05._02_AddEmployeeFromExcel">
         <methods>
           <include name="addEmployeeTest" invocation-numbers="0 1 2 3"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- com.exelenter.class05._02_AddEmployeeFromExcel -->
     </classes>

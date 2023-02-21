@@ -5,7 +5,6 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 // We need to import Apache POI libraries for this to work.
@@ -15,6 +14,7 @@ public class ExcelUtility {
     private static FileInputStream fileInputStream;
     private static Workbook workbook;
     private static Sheet sheet;
+
     private static void getFilePath(String filePath) {
         try {
             fileInputStream = new FileInputStream(filePath);
@@ -46,12 +46,22 @@ public class ExcelUtility {
 
         int rows = rowCount();
         int cols = colsCount();
-        Object[][] data = new Object[rows-1][cols];
+        Object[][] data = new Object[rows - 1][cols];
         for (int i = 1; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                data[i-1][j] = getCell(i, j);
+                if (getCell(i, j) != null) {           // <== This is to be able to read form empty/blank cells, avoid NullPointerException.
+                    data[i - 1][j] = getCell(i, j);
+                }
             }
         }
+
+        try {
+            workbook.close();            // Closing part is optional, but highly recommended.
+            fileInputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         return data;
     }
 

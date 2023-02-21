@@ -1,158 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-17T20:34:36 MST" name="Excel Test Suite" finished-at="2023-02-17T20:35:25 MST" duration-ms="49088">
+  <suite started-at="2023-02-20T18:28:24 MST" name="Default Suite" finished-at="2023-02-20T18:29:03 MST" duration-ms="39430">
     <groups>
-      <group name="excel">
-        <method signature="_02_HW_AddEmployee.addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" name="addEmployeeTest" class="com.exelenter.class05._02_AddEmployeeFromExcel"/>
-      </group> <!-- excel -->
-      <group name="regression">
-        <method signature="_02_HW_AddEmployee.addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" name="addEmployeeTest" class="com.exelenter.class05._02_AddEmployeeFromExcel"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="_02_HW_AddEmployee.addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" name="addEmployeeTest" class="com.exelenter.class05._02_AddEmployeeFromExcel"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-02-17T20:34:36 MST" name="Excel Test" finished-at="2023-02-17T20:35:25 MST" duration-ms="49088">
-      <class name="com.exelenter.class05._02_AddEmployeeFromExcel">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" started-at="2023-02-17T20:34:36 MST" name="setUp" finished-at="2023-02-17T20:34:39 MST" duration-ms="2865" status="PASS">
+    <test started-at="2023-02-20T18:28:24 MST" name="TestNGProject" finished-at="2023-02-20T18:29:03 MST" duration-ms="39430">
+      <class name="com.exelenter.class05._03_HW_LoginTestNegative">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:24 MST" name="setUp" finished-at="2023-02-20T18:28:27 MST" duration-ms="2931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" started-at="2023-02-17T20:34:39 MST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T20:34:47 MST" duration-ms="7779" status="PASS">
+        <test-method signature="userLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:27 MST" name="userLogin" data-provider="getData" finished-at="2023-02-20T18:28:27 MST" duration-ms="712" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[William]]>
+                <![CDATA[Admin]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Adams]]>
+                <![CDATA[invalidPass]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[willadams12]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[willAdam_@2023]]>
+                <![CDATA[Invalid credentials]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" started-at="2023-02-17T20:34:47 MST" name="tearDown" finished-at="2023-02-17T20:34:49 MST" duration-ms="2115" status="PASS">
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:27 MST" name="tearDown" finished-at="2023-02-20T18:28:30 MST" duration-ms="2116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" started-at="2023-02-17T20:34:49 MST" name="setUp" finished-at="2023-02-17T20:34:51 MST" duration-ms="2206" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:30 MST" name="setUp" finished-at="2023-02-20T18:28:32 MST" duration-ms="2119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" started-at="2023-02-17T20:34:51 MST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T20:34:59 MST" duration-ms="7221" status="PASS">
+        <test-method signature="userLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:32 MST" name="userLogin" data-provider="getData" finished-at="2023-02-20T18:28:32 MST" duration-ms="500" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Elizabeth]]>
+                <![CDATA[admi123]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Lee]]>
+                <![CDATA[Exelent2022Sdet!]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[elizabethlee12]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[eliLee_@2023]]>
+                <![CDATA[Invalid credentials]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" started-at="2023-02-17T20:34:59 MST" name="tearDown" finished-at="2023-02-17T20:35:01 MST" duration-ms="2108" status="PASS">
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:32 MST" name="tearDown" finished-at="2023-02-20T18:28:34 MST" duration-ms="2114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" started-at="2023-02-17T20:35:01 MST" name="setUp" finished-at="2023-02-17T20:35:03 MST" duration-ms="2026" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:34 MST" name="setUp" finished-at="2023-02-20T18:28:36 MST" duration-ms="1997" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" started-at="2023-02-17T20:35:03 MST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T20:35:11 MST" duration-ms="7865" status="PASS">
+        <test-method signature="userLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:36 MST" name="userLogin" data-provider="getData" finished-at="2023-02-20T18:28:37 MST" duration-ms="465" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Tyler]]>
+                <![CDATA[admi123]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Nguyen]]>
+                <![CDATA[invalidPass]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[tylernguyen12]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[tylerNguyen_@2023]]>
+                <![CDATA[Invalid credentials]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" started-at="2023-02-17T20:35:11 MST" name="tearDown" finished-at="2023-02-17T20:35:13 MST" duration-ms="2117" status="PASS">
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:37 MST" name="tearDown" finished-at="2023-02-20T18:28:39 MST" duration-ms="2112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" started-at="2023-02-17T20:35:13 MST" name="setUp" finished-at="2023-02-17T20:35:15 MST" duration-ms="2171" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:39 MST" name="setUp" finished-at="2023-02-20T18:28:41 MST" duration-ms="1974" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="addEmployeeTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" started-at="2023-02-17T20:35:15 MST" name="addEmployeeTest" data-provider="readFromExcel" finished-at="2023-02-17T20:35:23 MST" duration-ms="8007" status="PASS">
+        <test-method signature="userLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:41 MST" name="userLogin" data-provider="getData" finished-at="2023-02-20T18:28:41 MST" duration-ms="246" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[John]]>
+                <![CDATA[Admin]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Smith]]>
+                <![CDATA[]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[johnSmith12]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[johnSmith_@2023!!!]]>
+                <![CDATA[Password cannot be empty]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addEmployeeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._02_HW_AddEmployee@69b794e2]" started-at="2023-02-17T20:35:23 MST" name="tearDown" finished-at="2023-02-17T20:35:25 MST" duration-ms="2113" status="PASS">
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:41 MST" name="tearDown" finished-at="2023-02-20T18:28:43 MST" duration-ms="2114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.exelenter.class05._02_AddEmployeeFromExcel -->
-    </test> <!-- Excel Test -->
-  </suite> <!-- Excel Test Suite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:43 MST" name="setUp" finished-at="2023-02-20T18:28:45 MST" duration-ms="2014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:45 MST" name="userLogin" data-provider="getData" finished-at="2023-02-20T18:28:45 MST" duration-ms="210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admi123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password cannot be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:45 MST" name="tearDown" finished-at="2023-02-20T18:28:48 MST" duration-ms="2110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:48 MST" name="setUp" finished-at="2023-02-20T18:28:50 MST" duration-ms="2118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:50 MST" name="userLogin" data-provider="getData" finished-at="2023-02-20T18:28:50 MST" duration-ms="217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Exelent2022Sdet!]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Username cannot be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:50 MST" name="tearDown" finished-at="2023-02-20T18:28:52 MST" duration-ms="2113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:52 MST" name="setUp" finished-at="2023-02-20T18:28:55 MST" duration-ms="3184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:55 MST" name="userLogin" data-provider="getData" finished-at="2023-02-20T18:28:55 MST" duration-ms="209" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalidPass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Username cannot be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:55 MST" name="tearDown" finished-at="2023-02-20T18:28:58 MST" duration-ms="2111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:28:58 MST" name="setUp" finished-at="2023-02-20T18:29:01 MST" duration-ms="3442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="userLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:29:01 MST" name="userLogin" data-provider="getData" finished-at="2023-02-20T18:29:01 MST" duration-ms="159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Username cannot be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.exelenter.class05._03_HW_LoginTestNegative@59717824]" started-at="2023-02-20T18:29:01 MST" name="tearDown" finished-at="2023-02-20T18:29:03 MST" duration-ms="2111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.exelenter.class05._03_HW_LoginTestNegative -->
+    </test> <!-- TestNGProject -->
+  </suite> <!-- Default Suite -->
 </testng-results>

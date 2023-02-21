@@ -89,4 +89,5 @@ public class _02_AddEmployeeFromExcel extends BaseClass {
         return ExcelUtility.readFromExcel(absolutePath, "Employee");
     }
 
+    // By using your knowledge of Java, Selenium, and TestNG - you just retrieved data from an Excel file and stored in a remote Database. <== This is a milestone. Great Job!
 }
